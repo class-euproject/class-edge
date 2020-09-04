@@ -34,7 +34,7 @@ void convertCameraPixelsToMapMeters(const int x, const int y, const int cl, edge
 {
     double latitude, longitude;
     double up;
-    
+
     //transform camera pixel into georeferenced map pixel
     std::vector<cv::Point2f> x_y, ll;
     x_y.push_back(cv::Point2f(x, y));
@@ -44,7 +44,7 @@ void convertCameraPixelsToMapMeters(const int x, const int y, const int cl, edge
     pixel2GPS(ll[0].x, ll[0].y, latitude, longitude, cam.adfGeoTransform);
 
     //conversion from GPS to meters 
-    cam.geoConv.geodetic2Enu(latitude, longitude, 0, &north, &east, &up);    
+    cam.geoConv.geodetic2Enu(latitude, longitude, 0, &east, &north, &up);
 }
 
 std::vector<edge::tracker_line> getTrackingLines(const tracking::Tracking& t, edge::camera& cam, const float scale_x, const float scale_y, bool verbose){
