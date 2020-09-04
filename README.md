@@ -31,46 +31,26 @@ sudo apt-get install -y libgles2-mesa-dev libglew-dev libmatio-dev libpcap-dev
 bash scripts/install-glfw-3.3.sh
 ```
 
-## How to build the project
+## Installation 
 
 ```
-https://git.hipert.unimore.it/mverucchi/class-edge.git
 cd class-edge
 git submodule update --init --recursive 
+cd tkDNN
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ..
-make -j
+cmake ../
+make
 ```
 
-## How to lunch the edge
+The previous procedure generates an executable called `demo`.
 
-In general (use ./edge -h for help)
-```
-./edge -i <parameter-file> <cam-id-1> <cam-id-2> ... <cam-id-8> 
-```
-Example:
-```
-./edge -i ../data/all_cameras_en.yaml 20939 20940 20936 6310 634
-```
 
-## How to initialize or update submodule
+## Execution
+
+To execute the tkDNN, use the following command:
 ```
-git submodule update --init --recursive #initialize
-git submodule update --remote --recursive  #update all
+./demo ${PORT_NUMBER}
 ```
 
-## How to encrypt 
-
-This is how you encrypt a string (omit -iter 100000 with Ubuntu 16.04):
-```
-echo -n "yourAwesomeString" | openssl enc -e -aes-256-cbc -a -salt -iter 100000
-```
-In you want to encrypt the input of a parameters file, be sure that the field ```encrypted``` is set to 0.
-Then just run 
-```
-./encrypt <params-no-enc> <params-enc>
-```
-where
-  * ```<params-no-enc>``` is the input parametrs file (yaml)
-  * ```<params-enc>``` is the output parametrs file (yaml) with all the input encrypted with the password the program will ask for.
+The command above will launch the demo executable previously generated, and the port number specified is the port that the socket will be listening to. By default, if no port number is specified it will use the port **5559**.
