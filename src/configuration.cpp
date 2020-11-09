@@ -266,6 +266,10 @@ void readTiff(const std::string& path, double *adfGeoTransform)
 {
     if(!fileExist(path.c_str())){
         std::cout<<path<<std::endl;
+        char buff[FILENAME_MAX];
+        getcwd(buff, FILENAME_MAX);
+        std::string current_working_dir(buff);
+        std::cout << "Current path is " << current_working_dir << std::endl;
         if(path == "../data/masa_map.tif")
             system("wget https://cloud.hipert.unimore.it/s/rWrdd2ygKF48eGp/download -O ../data/masa_map.tif");
         if(!fileExist(path.c_str()))
