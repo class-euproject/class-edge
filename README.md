@@ -50,7 +50,7 @@ The previous procedure generates an executable called `demo`.
 
 To execute the tkDNN, use the following command:
 ```
-./demo ${PORT_NUMBER}
+./demo ${USE_SOCKET} ${CAMERA_ID} ${PORT_NUMBER} 
 ```
 
-The command above will launch the demo executable previously generated, and the port number specified is the port that the socket will be listening to. By default, if no port number is specified it will use the port **5559**.
+The command above will launch the demo executable previously generated. If `${USE_SOCKET} == 1`, then a socket connection will be open to communicate with the COMPSs workflow. `${CAMERA_ID}` refers to the video and camera configuration that will be used, by default **20939**. And the port number specified by `${PORT_NUMBER}` is the port that the socket will be listening to. By default, if no port number is specified it will use the port **5559**.
