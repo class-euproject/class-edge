@@ -1,10 +1,18 @@
 cameras:
+  - maskfile: !<!> ../../data/masks/elastic.jpg
+    input: !<!> ../../data/elastic.mp4
+    cameraCalib: !<!> ../../data/calib_cameras/20936.params
+    id: 2404
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/elastic.txt
+    maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
+    tif: !<!> ../../data/arcipresti_map.tif
   - maskfile: !<!> ../data/masks/20936_mask.jpg
-    input: !<!> "U2FsdGVkX1/+aqcC9bcUNAcPwjCM+L7hnxhMmSpuXFUH2NWRUtN1vw3YaaSUYmxW\nJXQXiThSmOTrD8cSCOoOt0TzqxeBAEtlq8Nmo6FjiLs=\n"
-    cameraCalib: !<!> ../data/calib_cameras/20936.params
+    input: !<!> ../../data/20936.mp4
+    cameraCalib: !<!> ../../data/calib_cameras/20936.params
     id: 20936
-    encrypted: 1
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-20936_20p.txt
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-20936_20p.txt
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
   - encrypted: 1
     maskfile: !<!> ../data/masks/20937_mask.jpg
@@ -27,12 +35,12 @@ cameras:
     id: 10218
     pmatrix: !<!> ../data/pmat_new/pmat_07-03-10218_20p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
-  - maskfile: !<!> ../data/masks/20940_mask.jpg
-    input: !<!> "U2FsdGVkX1/YcuuisZuh4hexkymp+JaXT0SRd5Amg2hcEhjmT8U7dqQUasx7FAjC\nhYVNYCagY87m/kaucEQfOUMCmM/lUbShSCv1v/qlK24=\n"
-    encrypted: 1
-    cameraCalib: !<!> ../data/calib_cameras/20940.params
+  - maskfile: !<!> ../../data/masks/20940_mask.jpg
+    input: !<!> ../../data/20940.mp4
+    encrypted: 0
+    cameraCalib: !<!> ../../data/calib_cameras/20940.params
     id: 20940
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-20940_10p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-20940_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
   - input: !<!> "U2FsdGVkX1900StMBnP+pbcjDVwwHZ+vNNAGmKAZcHqZnu85DxIRD+44VQOn9FQm\nOyjkMdV3/nuxbHKK2uggsg==\n"
     pmatrix: !<!> ../data/pmat_new/pmat_07-03-20932_10p.txt
