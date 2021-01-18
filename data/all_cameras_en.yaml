@@ -7,6 +7,14 @@ cameras:
     pmatrix: !<!> ../../data/pmat_new/elastic.txt
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
     tif: !<!> ../../data/arcipresti_map.tif
+  - maskfile: !<!> ../../data/masks/owen_village.jpg
+    input: !<!> ../../data/FayetteVille-OwenVillage.mp4
+    cameraCalib: !<!> ../../data/calib_cameras/20936.params
+    id: 2405
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/proj_matrix_owen_village.txt
+    maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
+    tif: !<!> ../../data/fayetteville_owenvillagedr.tif
   - maskfile: !<!> ../data/masks/20936_mask.jpg
     input: !<!> ../../data/20936.mp4
     cameraCalib: !<!> ../../data/calib_cameras/20936.params
