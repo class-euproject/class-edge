@@ -30,6 +30,19 @@ void GPS2pixel(double lat, double lon, int &x, int &y, double* adfGeoTransform)
     y = int(round( (lat - adfGeoTransform[3]) / adfGeoTransform[5]) );
 }
 
+void convertCameraPixelsToGeodetic(const int x, const int y, const int cl, edge::camera& cam, double& lat, double& lon)
+{
+    double up;
+
+    //transform camera pixel into georeferenced map pixel
+    std::vector<cv::Point2f> x_y, ll;
+    x_y.push_back(cv::Point2f(x, y));
+    cv::perspectiveTransform(x_y, ll, cam.prjMat);
+
+    //transform to map pixel into GPS
+    pixel2GPS(ll[0].x, ll[0].y, lat, lon, cam.adfGeoTransform);
+}
+
 void convertCameraPixelsToMapMeters(const int x, const int y, const int cl, edge::camera& cam, double& north, double& east)
 {
     double latitude, longitude;
@@ -40,10 +53,10 @@ void convertCameraPixelsToMapMeters(const int x, const int y, const int cl, edge
     x_y.push_back(cv::Point2f(x, y));
     cv::perspectiveTransform(x_y, ll, cam.prjMat);
 
-    //tranform to map pixel into GPS
+    //transform to map pixel into GPS
     pixel2GPS(ll[0].x, ll[0].y, latitude, longitude, cam.adfGeoTransform);
 
-    //conversion from GPS to meters 
+    //conversion from GPS to meters
     cam.geoConv.geodetic2Enu(latitude, longitude, 0, &east, &north, &up);
 }
 
@@ -72,7 +85,7 @@ std::vector<edge::tracker_line> getTrackingLines(const tracking::Tracking& t, ed
 
             //transform map pixels to camers pixels
             cv::perspectiveTransform(map_pixels, camera_pixels, cam.invPrjMat);
-            
+
             //convert into viewer coordinates
             for(auto cp: camera_pixels)
             {
