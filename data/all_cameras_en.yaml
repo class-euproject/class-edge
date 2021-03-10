@@ -24,8 +24,8 @@ cameras:
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
   - encrypted: 1
     maskfile: !<!> ../data/masks/20937_mask.jpg
-    cameraCalib: !<!> ../data/calib_cameras/20937.params
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-20937_20p.txt
+    cameraCalib: !<!> ../../data/calib_cameras/20937.params
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-20937_20p.txt
     id: 20937
     input: !<!> "U2FsdGVkX1+9iqrN6hqxdsAZrETpIFKr69Qgv46TFI4mlMeNPA/BEEn5OcApDFZP\nNh/AcxPz3SC2rsBEjaEDVAKT6sK66+cwki+MWupx9CY=\n"
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
