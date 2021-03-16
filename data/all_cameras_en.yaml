@@ -41,9 +41,9 @@ cameras:
   - input: !<!> "U2FsdGVkX1/jSKrPhQkIxgMLWOBaW1euVOMbYD3FIPK0KkwRobKVGxu5JbS5KeZD\n5i8JCFsAf268QSU9kF+BLecgmuGvff3FWGutiwQGJ7Y=\n"
     maskfile: !<!> ../data/masks/10218_mask.jpg
     encrypted: 1
-    cameraCalib: !<!> ../data/calib_cameras/10218.params
+    cameraCalib: !<!> ../../data/calib_cameras/10218.params
     id: 10218
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-10218_20p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-10218_20p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
   - maskfile: !<!> ../../data/masks/20940_mask.jpg
     #input: !<!> ../../data/20940.mp4
@@ -54,10 +54,10 @@ cameras:
     pmatrix: !<!> ../../data/pmat_new/pmat_07-03-20940_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
   - input: !<!> "U2FsdGVkX1900StMBnP+pbcjDVwwHZ+vNNAGmKAZcHqZnu85DxIRD+44VQOn9FQm\nOyjkMdV3/nuxbHKK2uggsg==\n"
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-20932_10p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-20932_10p.txt
     id: 20932
     maskfile: !<!> ../data/masks/20932_mask.jpg
-    cameraCalib: !<!> ../data/calib_cameras/20932.params
+    cameraCalib: !<!> ../../data/calib_cameras/20932.params
     encrypted: 1
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
   - input: !<!> "U2FsdGVkX18clSGgP99Kk91LqsJPMITr/lIU6amWhUJDwZiFUMiYQ/VjoSYYqbQn\nD6EPn+sKikBlH0qzNn/mfI3uPII20NzUB2v3B4N6XOw=\n"
