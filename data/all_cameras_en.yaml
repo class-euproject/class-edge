@@ -63,21 +63,21 @@ cameras:
   - input: !<!> "U2FsdGVkX18clSGgP99Kk91LqsJPMITr/lIU6amWhUJDwZiFUMiYQ/VjoSYYqbQn\nD6EPn+sKikBlH0qzNn/mfI3uPII20NzUB2v3B4N6XOw=\n"
     maskfile: !<!> ../data/masks/637_mask.jpg
     encrypted: 1
-    cameraCalib: !<!> ../data/calib_cameras/637.params
+    cameraCalib: !<!> ../../data/calib_cameras/637.params
     id: 637
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-637_7p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-637_7p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
   - maskfile: !<!> ../data/masks/6310_mask.jpg
     encrypted: 1
     input: !<!> "U2FsdGVkX19jCNJyKkLnIBdbQyn+dKNeHm0REXHua+EWhrF5uwXXOQ8cxsW0h4C2\njoOzwlY7F2e3GDgRN4jPqSpZKO9DIpTHR3UYnvS4/FU=\n"
-    cameraCalib: !<!> ../data/calib_cameras/6310.params
+    cameraCalib: !<!> ../../data/calib_cameras/6310.params
     id: 6310
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-6310_10p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6310_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
   - input: !<!> "U2FsdGVkX1984lo/Qy78czZSMb7UxR4vn+fbU0wYqeF5P1/0bdZ/UoNRq6s1rcl7\nvdMGl7Uxdt0avu8XSq4mF/RTKLCX12PUjBR3z11qLQc=\n"
     encrypted: 1
-    cameraCalib: !<!> ../data/calib_cameras/634.params
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-634_10p.txt
+    cameraCalib: !<!> ../../data/calib_cameras/634.params
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-634_10p.txt
     id: 634
     maskfile: !<!> ../data/masks/634_mask.jpg
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
@@ -85,38 +85,38 @@ cameras:
     id: 6314
     encrypted: 1
     input: !<!> "U2FsdGVkX19nBdcQVdUh+lE5o2IkWr3heCabwaM4UwrgNrzcdn0E+OsC2ZjwkeMS\nIzKQtjp8OjONf2LtejhrASLKrJdKeu1cWxkxLHUzwN81ewnWkwnQz4qvRtpSeHaN\n"
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-6314_10p.txt
-    cameraCalib: !<!> ../data/calib_cameras/6314.params
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6314_10p.txt
+    cameraCalib: !<!> ../../data/calib_cameras/6314.params
     maskFileOrient: !<!> ../data/masks_orient/960-720_mask_null.jpg
-  - cameraCalib: !<!> ../data/calib_cameras/6313.params
+  - cameraCalib: !<!> ../../data/calib_cameras/6313.params
     input: !<!> "U2FsdGVkX19CNuYwYqJHxZ4q+3yhdyHJyEvj5sqbHO6S0fjUmHe0erso0uMpplO5\n2RwekWkpfVu1rBrmRh7JgtW9Frnmv7CmA9bz04f1qztXGNSb7Fxq6xtDM+sBgEYW\n"
     maskfile: !<!> ../data/masks/6313_mask.jpg
     encrypted: 1
     id: 6313
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-6313_10p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6313_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/960-720_mask_null.jpg
   - maskfile: !<!> ../data/masks/6312_mask.jpg
-    cameraCalib: !<!> ../data/calib_cameras/6312.params
+    cameraCalib: !<!> ../../data/calib_cameras/6312.params
     input: !<!> "U2FsdGVkX181v6mndUTfsuFObwL7JGSWnB3sySRq8MeBDOPgtO4gTuX7rBPyPOwR\nXgKHFPOmePJrQjEEX8kky3YBaNc0ovT0Y7stGcKF4BpesPnl9DlU2HJ+Amgsuj3/\n"
     encrypted: 1
     id: 312
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-6312_10p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6312_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/960-720_mask_null.jpg
   - maskfile: !<!> ../data/masks/6311_mask.jpg
-    cameraCalib: !<!> ../data/calib_cameras/6311.params
+    cameraCalib: !<!> ../../data/calib_cameras/6311.params
     input: !<!> "U2FsdGVkX1+tBOT/4tcP1PB+dQxRnMerk7E6Y3kB+KlK//Okk4kznO4EWk6o7dKW\nqfdaAZ+8XupLfNkrGOK0h6DTlgSsM7dR7xKiUMDLaQG4epyzLf91CbBp3GxQpTUI\n"
     encrypted: 1
     id: 6311
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-6311_10p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6311_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/960-720_mask_null.jpg
-  - cameraCalib: !<!> ../data/calib_cameras/632.params
+  - cameraCalib: !<!> ../../data/calib_cameras/632.params
     maskfile: !<!> ../data/masks/636_mask.jpg
     input: !<!> "U2FsdGVkX1+3Z03hze71tQSEVkiex0p4wMUuA8RfqDg7NT8isAJP15gQjn/+mUUD\nMOsP7OdoURwLCE3vVUmR/vx4e31lup+xRKzQ6AxFITw=\n"
     encrypted: 1
     id: 636
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-636_10p.txt
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-636_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
-  - cameraCalib: !<!> ../data/calib_cameras/6315.params
+  - cameraCalib: !<!> ../../data/calib_cameras/6315.params
     encrypted: 1
     maskfile: !<!> ../data/masks/6315_mask.jpg
     input: !<!> "U2FsdGVkX1+g7/YVVRh5JdRbrWSgDTV9aiA0nAYBJk+I2e0wK/2+wQ2DjNETDSoK\nPxchSWx91Gnn5/iTObqxVDUKyKXHCMJRbfNJw6+acAc=\n"
