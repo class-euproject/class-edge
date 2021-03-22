@@ -1,4 +1,20 @@
 cameras:
+  - maskfile: !<!> ../../data/masks/batoni3_mask.jpg
+    input: !<!> ../../data/Resistenza-4.mp4
+    cameraCalib: !<!> ../../data/calib_cameras/2405.params
+    id: 2406
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/proj_matrix_Resistenza_4.txt
+    maskFileOrient: !<!> ../data/masks_orient/batoni3_mask_null.jpg
+    tif: !<!> ../../data/Resistenza_map.tif
+  - maskfile: !<!> ../../data/masks/batoni3_mask.jpg
+    input: !<!> ../../data/Batoni-3.mp4
+    cameraCalib: !<!> ../../data/calib_cameras/2405.params
+    id: 2405
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/pmat_2405_Batoni3.txt
+    maskFileOrient: !<!> ../data/masks_orient/batoni3_mask_null.jpg
+    tif: !<!> ../../data/Batoni_map.tif
   - maskfile: !<!> ../../data/masks/elastic.jpg
     input: !<!> ../../data/elastic.mp4
     cameraCalib: !<!> ../../data/calib_cameras/20936.params
@@ -10,11 +26,37 @@ cameras:
   - maskfile: !<!> ../../data/masks/owen_village.jpg
     input: !<!> ../../data/FayetteVille-OwenVillage.mp4
     cameraCalib: !<!> ../../data/calib_cameras/20936.params
-    id: 2405
+    id: 2407
     encrypted: 0
-    pmatrix: !<!> ../../data/pmat_new/proj_matrix_owen_village.txt
+    pmatrix: !<!> ../../data/pmat_new/proj_matrix_FayetteVille-OwenVillage.txt
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
-    tif: !<!> ../../data/fayetteville_owenvillagedr.tif
+    tif: !<!> ../../data/FayetteVille-OwenVillage.tif
+
+  - maskfile: !<!> ../../data/masks/fluvia.jpg
+    input: !<!> ../../data/Fluvia03104.MP4
+    cameraCalib: !<!> ../../data/calib_cameras/20936.params
+    id: 2408
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/proj_matrix_Fluvia03104.txt
+    maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
+    tif: !<!> ../../data/fluvia_map.tif
+  - maskfile: !<!> ../../data/masks/fluvia.jpg
+    input: !<!> ../../data/Fluvia03108.MP4
+    cameraCalib: !<!> ../../data/calib_cameras/20936.params
+    id: 2409
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/proj_matrix_Fluvia03108.txt
+    maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
+    tif: !<!> ../../data/fluvia_map.tif
+  - maskfile: !<!> ../../data/masks/fluvia.jpg
+    input: !<!> ../../data/Fluvia03107.MP4
+    cameraCalib: !<!> ../../data/calib_cameras/20936.params
+    id: 2410
+    encrypted: 0
+    pmatrix: !<!> ../../data/pmat_new/proj_matrix_Fluvia03107.txt
+    maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
+    tif: !<!> ../../data/fluvia_map.tif
+
   - maskfile: !<!> ../data/masks/20936_mask.jpg
     input: !<!> ../../data/20936.mp4
     cameraCalib: !<!> ../../data/calib_cameras/20936.params
@@ -24,12 +66,12 @@ cameras:
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
   - encrypted: 1
     maskfile: !<!> ../data/masks/20937_mask.jpg
-    cameraCalib: !<!> ../data/calib_cameras/20937.params
-    pmatrix: !<!> ../data/pmat_new/pmat_07-03-20937_20p.txt
+    cameraCalib: !<!> ../../data/calib_cameras/20937.params
+    pmatrix: !<!> ../../data/pmat_new/pmat_07-03-20937_20p.txt
     id: 20937
     input: !<!> "U2FsdGVkX1+9iqrN6hqxdsAZrETpIFKr69Qgv46TFI4mlMeNPA/BEEn5OcApDFZP\nNh/AcxPz3SC2rsBEjaEDVAKT6sK66+cwki+MWupx9CY=\n"
     maskFileOrient: !<!> ../data/masks_orient/1920-1080_mask_null.jpg
-  - input: !<!> ../../data/20939.mp4
+  - input: !<!> ../../data/20939_cut.mp4
     maskfile: !<!> ../../data/masks/20939_mask.jpg
     encrypted: 0
     cameraCalib: !<!> ../../data/calib_cameras/20939.params
