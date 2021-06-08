@@ -123,6 +123,14 @@ cameras:
     id: 6315
     pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6315_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/3840-2160_mask_null.jpg
+  - encrypted: 1
+    input: !<!> "U2FsdGVkX1/gAc+0SLfnAAzadXekL/kzw0EW1RTdDZZskfGLSBhKi9owPqL5Lu0InR6jHnA57apoWCVQuo7gSB3Gy+htlZi5pd0PNNRtxM8=\n"
+    resolution: !<!> 800x450
+    cameraCalib: !<!> ""
+    maskFileOrient: !<!> ""
+    maskfile: !<!> ""
+    id: 6317
+    pmatrix: !<!> ../../data/pmat-2-10-6317_30p.txt
 net: !<!> yolo3_berkeley_fp32.rt
 width: 960
 classes: 10
