@@ -70,7 +70,7 @@ cameras:
   - maskfile: !<!> ../data/masks/6310_mask.jpg
     encrypted: 0
     # input: !<!> "U2FsdGVkX19jCNJyKkLnIBdbQyn+dKNeHm0REXHua+EWhrF5uwXXOQ8cxsW0h4C2\njoOzwlY7F2e3GDgRN4jPqSpZKO9DIpTHR3UYnvS4/FU=\n"
-    input: !<!> ../../6310.mp4
+    input: !<!> ../../data/6310.mp4
     cameraCalib: !<!> ../../data/calib_cameras/6310.params
     id: 6310
     pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6310_10p.txt
