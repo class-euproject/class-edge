@@ -68,9 +68,9 @@ cameras:
     pmatrix: !<!> ../../data/pmat_new/pmat_07-03-637_7p.txt
     maskFileOrient: !<!> ../data/masks_orient/3072-1728_mask_null.jpg
   - maskfile: !<!> ../data/masks/6310_mask.jpg
-    encrypted: 0
-    # input: !<!> "U2FsdGVkX19jCNJyKkLnIBdbQyn+dKNeHm0REXHua+EWhrF5uwXXOQ8cxsW0h4C2\njoOzwlY7F2e3GDgRN4jPqSpZKO9DIpTHR3UYnvS4/FU=\n"
-    input: !<!> ../../data/6310.mp4
+    encrypted: 1
+    input: !<!> "U2FsdGVkX19jCNJyKkLnIBdbQyn+dKNeHm0REXHua+EWhrF5uwXXOQ8cxsW0h4C2\njoOzwlY7F2e3GDgRN4jPqSpZKO9DIpTHR3UYnvS4/FU=\n"
+    # input: !<!> ../../data/6310.mp4
     cameraCalib: !<!> ../../data/calib_cameras/6310.params
     id: 6310
     pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6310_10p.txt
@@ -124,14 +124,6 @@ cameras:
     id: 6315
     pmatrix: !<!> ../../data/pmat_new/pmat_07-03-6315_10p.txt
     maskFileOrient: !<!> ../data/masks_orient/3840-2160_mask_null.jpg
-  - encrypted: 1
-    input: !<!> "U2FsdGVkX1/gAc+0SLfnAAzadXekL/kzw0EW1RTdDZZskfGLSBhKi9owPqL5Lu0InR6jHnA57apoWCVQuo7gSB3Gy+htlZi5pd0PNNRtxM8=\n"
-    resolution: !<!> 800x450
-    cameraCalib: !<!> ""
-    maskFileOrient: !<!> ""
-    maskfile: !<!> ""
-    id: 6317
-    pmatrix: !<!> ../../data/pmat-2-10-6317_30p.txt
 net: !<!> yolo3_berkeley_fp32.rt
 width: 960
 classes: 10
